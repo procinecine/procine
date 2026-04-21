@@ -1,0 +1,144 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background: #25d366; /* Verde WhatsApp */
+    color: white;
+    padding: 20px;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* LA SOLUCIÓN: Forzar a la imagen a ocupar todo el espacio disponible */
+.foto-principal {
+    width: 100% !important;   /* Obliga a ocupar todo el ancho */
+    height: 100% !important;  /* Obliga a ocupar todo el alto */
+    object-fit: contain;      /* Mantiene la foto completa sin deformarla */
+    display: block;
+    
+}
+/* Ajuste para que las tarjetas no se vean gigantes en computadoras */
+.tarjeta {
+    max-width: 350px; /* Ancho típico de un celular */
+    margin: 20px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.precio {
+    font-weight: bold;
+    color: #2ecc71;
+    font-size: 1.2rem;
+}
+
+.boton {
+    display: block;
+    background: #25d366;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.galeria-producto {
+    width: 100%;
+    height: auto; /* Altura automática según la foto */
+    background-color: #1a1a1a; 
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+.miniaturas {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 15px 0; /* Espacio arriba y abajo */
+    flex-wrap: wrap; /* Si hay muchas, que bajen a la siguiente línea */
+}
+.miniaturas img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.miniaturas img:hover {
+    border-color: #25d366;
+    transform: scale(1.1);
+}
+
+.instruccion-galeria {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+    font-weight: bold; /* 👈 Esto pone la letra en negrita */
+    text-align: center;
+}
+
+/* Animación opcional para que el cliente lo note */
+@keyframes aparecer {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+.miniaturas img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.miniaturas img:hover {
+    border-color: #25d366; /* Color verde cuando pasan el mouse o tocan */
+}
+
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Esto ahora sí funcionará */
+    gap: 20px;
+    padding: 20px;
+}
+
+.selector-cantidad {
+    margin: 15px 0;
+    font-family: sans-serif;
+}
+
+.selector-cantidad select {
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid #25d366;
+    background: white;
+    font-weight: bold;
+    cursor: pointer;
+}

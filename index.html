@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Catálogo Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <h1>Mis Productos</h1>
+        <p>Elige lo que te guste y haz clic para pedirlo</p>
+    </header>
+
+    <main class="contenedor contenedor-productos">
+
+
+
+
+
+
+<div class="tarjeta">
+    <h3 class="titulo-producto">Crunchyroll</h3>
+   
+    <p class="precio">9 bs</p>
+    <div class="galeria-producto">
+        <img src="imagenes/IMAGENCRUNCHYy/crunch.png" class="foto-principal" id="main-1">
+ </div>
+        <p class="instruccion-galeria">✨ Toca las imágenes para ver detalles</p>
+        
+        <div class="miniaturas">
+            <img src="imagenes/IMAGENCRUNCHYy/crun1.jpeg" onclick="cambiarImagen('main-1', 'imagenes/IMAGENCRUNCHYy/crun1.jpeg')">
+            <img src="imagenes/IMAGENCRUNCHYy/crun2.jpeg" onclick="cambiarImagen('main-1', 'imagenes/IMAGENCRUNCHYy/crun2.jpeg')">
+            <img src="imagenes/IMAGENCRUNCHYy/crun3.jpeg" onclick="cambiarImagen('main-1', 'imagenes/IMAGENCRUNCHYy/crun3.jpeg')">
+              <img src="imagenes/IMAGENCRUNCHYy/crun4.jpeg" onclick="cambiarImagen('main-1', 'imagenes/IMAGENCRUNCHYy/crun4.jpeg')">
+             <img src="imagenes/IMAGENCRUNCHYy/crun5.jpeg" onclick="cambiarImagen('main-1', 'imagenes/IMAGENCRUNCHYy/crun5.jpeg')">
+             <img src="imagenes/IMAGENCRUNCHYy/crun7.jpeg" onclick="cambiarImagen('main-1', 'imagenes/IMAGENCRUNCHYy/crun7.jpeg')">
+             
+             <img src="imagenes/IMAGENCRUNCHYy/crun9.jpeg" onclick="cambiarImagen('main-1', 'imagenes/IMAGENCRUNCHYy/crun9.jpeg')">
+             
+
+        </div>
+
+        <div class="selector-cantidad">
+        <label for="cantidad-crunchy">Perfiles:</label>
+        <select id="cantidad-crunchy">
+            <option value="1">1 Perfil - 9 bs</option>
+            <option value="2">2 Perfiles - 16 bs</option>
+            <option value="3">3 Perfiles - 24 bs</option>
+        </select>
+    </div>
+   
+  <button class="boton-add" onclick="agregarCrunchyAlPedido()">
+        + Agregar al pedido
+    </button>
+
+</div>
+
+<div id="btn-whatsapp-flotante" onclick="enviarPedido()" style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px; border-radius: 50px; cursor: pointer;">
+    Ver Pedido (<span id="cuenta-carrito">0</span>)
+</div>
+
+
+
+
+
+
+
+
+<div class="tarjeta">
+      <h3 class="titulo-producto">Disney</h3>
+    <img src="imagenes/Imagendisney/dis.jpg" alt="Producto 1">
+    <h3>Producto 1</h3>
+    <p class="precio">$50.00</p>
+    <button onclick="agregarAlCarrito('Producto 1', 50)" class="boton-add">
+        + Agregar al pedido
+    </button>
+</div>
+
+<div class="tarjeta">
+    <h3 class="titulo-producto">Hbo Max</h3>
+    <img src="imagenes/imagenHBO/hbo.webp" alt="Producto 1">
+    <h3>Producto 1</h3>
+    <p class="precio">$50.00</p>
+    <button onclick="agregarAlCarrito('Producto 1', 50)" class="boton-add">
+        + Agregar al pedido
+    </button>
+</div>
+
+<div class="tarjeta">
+     <h3 class="titulo-producto">Netflix</h3>
+    <img src="imagenes/Imagennetflix/net.webp" alt="Producto 1">
+    <h3>Producto 1</h3>
+    <p class="precio">$50.00</p>
+    <button onclick="agregarAlCarrito('Producto 1', 50)" class="boton-add">
+        + Agregar al pedido
+    </button>
+</div>
+
+<div id="btn-whatsapp-flotante" onclick="enviarPedido()">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="30">
+    Ver mi pedido (<span id="cuenta-carrito">0</span>)
+</div>
+
+       
+
+    
+        </main>
+        <script src="script.js"></script>
+</body>
+</html>
