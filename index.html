@@ -4,15 +4,41 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Catálogo Digital</title>
+ <title>CINE.PRO | Catálogo Digital</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <header>
-        <h1>Mis Productos</h1>
-        <p>Elige lo que te guste y haz clic para pedirlo</p>
-    </header>
+    <h1>SOMOS CINE.PRO</h1>
+    <div class="soporte-box">
+        
+        <h2>Proveedores de servicios digitales</h2>
+        <p class="atencion">Atención de soporte al cliente todos los dias</p>
+    </div>
+    <div class="contacto-rapido">
+        <a href="https://wa.me/59169950080?text=Hola%20CINE.PRO,%20necesito%20ayuda%20con%20un%20pedido" class="link-whatsapp">
+            <img src="imagenes/iconos/wasapp.webp" alt="" class="icono-ws">
+           Click aqui enviar mensaje directo por WhatsApp
+        </a>
+    </div>
+    
+    <div class="contactos">
+
+        <h3>
+    <img src="imagenes/iconos/wasapp.webp" alt="WhatsApp" class="icono-ws"> 
+    Referencias: 
+    <a href="tel:+59169950080">69950080</a> | 
+    <a href="tel:+59167384062">67384062</a>
+        </h3>
+
+    </div>
+   <h3>"Arma tu combo: Selecciona tus plataformas,elige cuantos perfles,haz clic en +Agregar y luego pulsa el botón 'Ver pedido' 
+        para enviarlo directo a nuestro WhatsApp."</h3>
+         <p class="instruccion">Te daremos un descuento si eliges mas de una plataforma o perfil</p>
+            <p class="instruccion">Pagos mensuales</p>
+</header>
+
 
     <main class="contenedor contenedor-productos">
 
@@ -22,24 +48,24 @@
 
 
 <div class="tarjeta">
-    <h3 class="titulo-producto">Crunchyroll</h3>
+    <h3 class="titulo-producto color-crunchyroll">CRUNCHYROLL</h3>
+     <h3 class="titulo-producto">El paraíso del anime: Estrenos exclusivos y series completas. Disfruta en tu celular, PC o Smart TV sin anuncios</h3>
    
     <p class="precio">9 bs</p>
     <div class="galeria-producto">
-        <img src="imagenes/IMAGENCRUNCHYy/crunch.png" class="foto-principal" id="main-1">
+        <img src="imagenes/IMAGENCRUNCHYy/crunch.webp" class="foto-principal" id="main-1">
  </div>
         <p class="instruccion-galeria">✨ Toca las imágenes para ver detalles</p>
         
         <div class="miniaturas">
-            <img src="imagenes/IMAGENCRUNCHYy/crun1.jpeg" onclick="cambiarImagen('main-1', 'imagenes/IMAGENCRUNCHYy/crun1.jpeg')">
-            <img src="imagenes/IMAGENCRUNCHYy/crun2.jpeg" onclick="cambiarImagen('main-1', 'imagenes/IMAGENCRUNCHYy/crun2.jpeg')">
-            <img src="imagenes/IMAGENCRUNCHYy/crun3.jpeg" onclick="cambiarImagen('main-1', 'imagenes/IMAGENCRUNCHYy/crun3.jpeg')">
-              <img src="imagenes/IMAGENCRUNCHYy/crun4.jpeg" onclick="cambiarImagen('main-1', 'imagenes/IMAGENCRUNCHYy/crun4.jpeg')">
-             <img src="imagenes/IMAGENCRUNCHYy/crun5.jpeg" onclick="cambiarImagen('main-1', 'imagenes/IMAGENCRUNCHYy/crun5.jpeg')">
-             <img src="imagenes/IMAGENCRUNCHYy/crun7.jpeg" onclick="cambiarImagen('main-1', 'imagenes/IMAGENCRUNCHYy/crun7.jpeg')">
+            <img src="imagenes/IMAGENCRUNCHYy/crun2.webp" onclick="cambiarImagen('main-1', 'imagenes/IMAGENCRUNCHYy/crun2.webp')">
+            <img src="imagenes/IMAGENCRUNCHYy/crun5.webp" onclick="cambiarImagen('main-1', 'imagenes/IMAGENCRUNCHYy/crun5.webp')">
+            <img src="imagenes/IMAGENCRUNCHYy/crun9.webp" onclick="cambiarImagen('main-1', 'imagenes/IMAGENCRUNCHYy/crun9.webp')">
+              <img src="imagenes/IMAGENCRUNCHYy/crun110.webp" onclick="cambiarImagen('main-1', 'imagenes/IMAGENCRUNCHYy/crun110.webp')">
+             <img src="imagenes/IMAGENCRUNCHYy/crun16.webp" onclick="cambiarImagen('main-1', 'imagenes/IMAGENCRUNCHYy/crun16.webp')">
+           
              
-             <img src="imagenes/IMAGENCRUNCHYy/crun9.jpeg" onclick="cambiarImagen('main-1', 'imagenes/IMAGENCRUNCHYy/crun9.jpeg')">
-             
+  
 
         </div>
 
@@ -47,13 +73,494 @@
         <label for="cantidad-crunchy">Perfiles:</label>
         <select id="cantidad-crunchy">
             <option value="1">1 Perfil - 9 bs</option>
+            <option value="2">2 Perfiles - 18 bs</option>
+            <option value="3">3 Perfiles - 27 bs</option>
+        </select>
+    </div>
+   
+  <button class="boton-add" onclick="agregarCrunchyAlPedido()">
+        + Click aqui agregar tu pedido
+    </button>
+
+</div>
+
+<div id="btn-whatsapp-flotante" onclick="enviarPedido()" style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px; border-radius: 50px; cursor: pointer;">
+    Ver Pedido (<span id="cuenta-carrito">0</span>)
+</div>
+
+
+
+
+
+
+
+<div class="tarjeta">
+    <h3 class="titulo-producto color-crunchyroll">NETFLIX</h3>
+     <h3 class="titulo-producto">Películas, series y documentales originales lucha libre en vivo WWE. La mayor variedad de contenido premium para ver en familia.</h3>
+   
+    <p class="precio">33 bs</p>
+    <div class="galeria-producto">
+        <img src="imagenes/Imagennetflix/net.webp" class="foto-principal" id="main-netflix">
+ </div>
+        <p class="instruccion-galeria">✨ Toca las imágenes para ver detalles</p>
+        
+        <div class="miniaturas">
+            <img src="imagenes/Imagennetflix/net1.webp" onclick="cambiarImagen('main-netflix', 'imagenes/Imagennetflix/net1.webp')">
+            <img src="imagenes/Imagennetflix/net2.webp" onclick="cambiarImagen('main-netflix', 'imagenes/Imagennetflix/net2.webp')">
+           <img src="imagenes/Imagennetflix/net3.webp" onclick="cambiarImagen('main-netflix', 'imagenes/Imagennetflix/net3.webp')">
+             <img src="imagenes/Imagennetflix/net4.webp" onclick="cambiarImagen('main-netflix', 'imagenes/Imagennetflix/net4.webp')">
+              
+
+        </div>
+
+        <div class="selector-cantidad">
+        <label for="cantidad-netflix">Perfiles:</label>
+        <select id="cantidad-netflix">
+            <option value="1">1 Perfil - 33 bs</option>
+            <option value="2">2 Perfiles - 66 bs</option>
+            <option value="3">3 Perfiles - 99 bs</option>
+        </select>
+    </div>
+   
+  <button class="boton-add" onclick="agregarNetflixAlPedido()">
+        + Click aqui agregar tu pedido
+    </button>
+
+</div>
+
+<div id="btn-whatsapp-flotante" onclick="enviarPedido()" style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px; border-radius: 50px; cursor: pointer;">
+    Ver Pedido (<span id="cuenta-carrito">0</span>)
+</div>
+       
+
+
+
+
+
+<div class="tarjeta">
+    <h3 class="titulo-producto color-crunchyroll">DISNEY PREMIUM</h3>
+     <h3 class="titulo-producto">Todo Disney, Pixar, Marvel y Star Wars. Además, los mejores partidos de fútbol europeo, copa sudamericana, copa libertadores, deportes en vivo por ESPN.</h3>
+   
+    <p class="precio">27 bs</p>
+    <div class="galeria-producto">
+        <img src="imagenes/Imagendisney/dis (1).webp" class="foto-principal" id="main-disney">
+ </div>
+        <p class="instruccion-galeria">✨ Toca las imágenes para ver detalles</p>
+        
+        <div class="miniaturas">
+            <img src="imagenes/disney/di1.webp" onclick="cambiarImagen('main-disney', 'imagenes/disney/di1.webp')">
+            <img src="imagenes/disney/dis2.webp" onclick="cambiarImagen('main-disney', 'imagenes/disney/dis2.webp')">
+           <img src="imagenes/disney/dis3.webp" onclick="cambiarImagen('main-disney', 'imagenes/disney/dis3.webp')">
+             <img src="imagenes/disney/dis4.webp" onclick="cambiarImagen('main-disney', 'imagenes/disney/dis4.webp')">
+             <img src="imagenes/disney/dis5.webp" onclick="cambiarImagen('main-disney', 'imagenes/disney/dis5.webp')">    
+
+        </div>
+
+        <div class="selector-cantidad">
+        <label for="cantidad-disney">Perfiles:</label>
+        <select id="cantidad-disney">
+            <option value="1">1 Perfil - 27 bs</option>
+            <option value="2">2 Perfiles - 54 bs</option>
+            <option value="3">3 Perfiles - 81 bs</option>
+        </select>
+    </div>
+   
+  <button class="boton-add" onclick="agregarDisneyAlPedido()">
+        + Click aqui agregar tu pedido
+    </button>
+
+</div>
+
+<div id="btn-whatsapp-flotante" onclick="enviarPedido()" style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px; border-radius: 50px; cursor: pointer;">
+    Ver Pedido (<span id="cuenta-carrito">0</span>)
+</div>
+    
+
+
+
+<div class="tarjeta">
+    <h3 class="titulo-producto color-crunchyroll">HBO MAX</h3>
+     <h3 class="titulo-producto">peliculas series de Warner Bros y DC documentales</h3>
+   
+    <p class="precio">13 bs</p>
+    <div class="galeria-producto">
+        <img src="imagenes/imagenHBO/hboprinci.webp" class="foto-principal" id="main-hbomax">
+ </div>
+        <p class="instruccion-galeria">✨ Toca las imágenes para ver detalles</p>
+        
+        <div class="miniaturas">
+            <img src="imagenes/imagenHBO/h1.jpeg" onclick="cambiarImagen('main-hbomax', 'imagenes/imagenHBO/h1.jpeg')">
+            <img src="imagenes/imagenHBO/h2.jpeg" onclick="cambiarImagen('main-hbomax', 'imagenes/imagenHBO/h2.jpeg')">
+           <img src="imagenes/imagenHBO/h3.jpeg" onclick="cambiarImagen('main-hbomax', 'imagenes/imagenHBO/h3.jpeg')">
+             <img src="imagenes/imagenHBO/h4.jpeg" onclick="cambiarImagen('main-hbomax', 'imagenes/imagenHBO/h4.jpeg')">
+             <img src="imagenes/imagenHBO/hb5.webp" onclick="cambiarImagen('main-hbomax', 'imagenes/imagenHBO/hb5.webp')">    
+
+        </div>
+
+        <div class="selector-cantidad">
+        <label for="cantidad-hbomax">Perfiles:</label>
+        <select id="cantidad-hbomax">
+            <option value="1">1 Perfil - 13 bs</option>
+            <option value="2">2 Perfiles - 26 bs</option>
+            <option value="3">3 Perfiles - 39 bs</option>
+        </select>
+    </div>
+   
+  <button class="boton-add" onclick="agregarHbomaxAlPedido()">
+        + Click aqui agregar tu pedido
+    </button>
+
+</div>
+
+<div id="btn-whatsapp-flotante" onclick="enviarPedido()" style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px; border-radius: 50px; cursor: pointer;">
+    Ver Pedido (<span id="cuenta-carrito">0</span>)
+</div>
+
+
+
+
+
+
+<div class="tarjeta">
+    <h3 class="titulo-producto color-crunchyroll">PRIME VIDEO</h3>
+     <h3 class="titulo-producto">Plataforma de peliculas series funciona en celular,television, computadora</h3>
+   
+    <p class="precio">12 bs</p>
+    <div class="galeria-producto">
+        <img src="imagenes/Imagenprime/prime.webp" class="foto-principal" id="main-primevideo">
+ </div>
+        <p class="instruccion-galeria">✨ Toca las imágenes para ver detalles</p>
+        
+        <div class="miniaturas">
+            <img src="imagenes/Imagenprime/prim1.webp" onclick="cambiarImagen('main-primevideo', 'imagenes/Imagenprime/prim1.webp')">
+            <img src="imagenes/Imagenprime/prim2.webp" onclick="cambiarImagen('main-primevideo', 'imagenes/Imagenprime/prim2.webp')">
+           <img src="imagenes/Imagenprime/prim3.webp" onclick="cambiarImagen('main-primevideo', 'imagenes/Imagenprime/prim3.webp')">
+             <img src="imagenes/Imagenprime/prim4.webp" onclick="cambiarImagen('main-primevideo', 'imagenes/Imagenprime/prim4.webp')">
+        
+
+        </div>
+
+        <div class="selector-cantidad">
+        <label for="cantidad-primevideo">Perfiles:</label>
+        <select id="cantidad-primevideo">
+            <option value="1">1 Perfil - 12 bs</option>
+            <option value="2">2 Perfiles - 24 bs</option>
+            <option value="3">3 Perfiles - 36 bs</option>
+        </select>
+    </div>
+   
+  <button class="boton-add" onclick="agregarPrimevideoAlPedido()">
+        + Click aqui agregar tu pedido
+    </button>
+
+</div>
+
+<div id="btn-whatsapp-flotante" onclick="enviarPedido()" style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px; border-radius: 50px; cursor: pointer;">
+    Ver Pedido (<span id="cuenta-carrito">0</span>)
+</div>
+
+
+
+
+<div class="tarjeta">
+    <h3 class="titulo-producto color-crunchyroll">SPOTIFY</h3>
+     <h3 class="titulo-producto">Música sin límites y sin anuncios. Descarga tus playlists favoritas, salta canciones ilimitadamente y disfruta del mejor sonido en cualquier lugar</h3>
+   
+    <p class="precio">27 bs</p>
+    <div class="galeria-producto">
+        <img src="imagenes/spotify/spotyprinci (1).webp" class="foto-principal" id="main-spotify">
+ </div>
+        <p class="instruccion-galeria">✨ Toca las imágenes para ver detalles</p>
+        
+        <div class="miniaturas">
+            <img src="imagenes/spotify/spoty1.webp" onclick="cambiarImagen('main-spotify', 'imagenes/spotify/spoty1.webp')">
+            <img src="imagenes/spotify/spoty2.webp" onclick="cambiarImagen('main-spotify', 'imagenes/spotify/spoty2.webp')">
+           <img src="imagenes/spotify/spot3.webp" onclick="cambiarImagen('main-spotify', 'imagenes/spotify/spot3.webp')">
+        
+
+        </div>
+
+        <div class="selector-cantidad">
+        <label for="cantidad-spotify">Perfiles:</label>
+        <select id="cantidad-spotify">
+            <option value="1">1 Perfil - 27 bs</option>
+            <option value="2">2 Perfiles - 54 bs</option>
+            <option value="3">3 Perfiles - 80 bs</option>
+        </select>
+    </div>
+   
+  <button class="boton-add" onclick="agregarSpotifyAlPedido()">
+        + Click aqui agregar tu pedido
+    </button>
+
+</div>
+
+<div id="btn-whatsapp-flotante" onclick="enviarPedido()" style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px; border-radius: 50px; cursor: pointer;">
+    Ver Pedido (<span id="cuenta-carrito">0</span>)
+</div>
+
+
+
+<div class="tarjeta">
+    <h3 class="titulo-producto color-crunchyroll">YOUTUBE</h3>
+     <h3 class="titulo-producto">Disfruta de todo el contenido de YouTube sin anuncios y en segundo plano. Incluye YouTube Music para escuchar tus canciones favoritas incluso con la pantalla bloqueada.</h3>
+   
+    <p class="precio">20 bs</p>
+    <div class="galeria-producto">
+        <img src="imagenes/chatgpt/youtprinci (1).webp" class="foto-principal" id="main-YouTube">
+ </div>
+        <p class="instruccion-galeria">✨ Toca las imágenes para ver detalles</p>
+        
+        <div class="miniaturas">
+            <img src="imagenes/youtu/you.webp" onclick="cambiarImagen('main-YouTube', 'imagenes/youtu/you.webp')">
+       
+
+        </div>
+
+        <div class="selector-cantidad">
+        <label for="cantidad-YouTube">Perfiles:</label>
+        <select id="cantidad-YouTube">
+            <option value="1">1 Perfil - 20 bs</option>
+            <option value="2">2 Perfiles - 40 bs</option>
+            <option value="3">3 Perfiles - 60 bs</option>
+        </select>
+    </div>
+   
+  <button class="boton-add" onclick="agregarYouTubeAlPedido()">
+        + Click aqui agregar tu pedido
+    </button>
+
+</div>
+
+<div id="btn-whatsapp-flotante" onclick="enviarPedido()" style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px; border-radius: 50px; cursor: pointer;">
+    Ver Pedido (<span id="cuenta-carrito">0</span>)
+</div>
+
+
+
+
+<div class="tarjeta">
+    <h3 class="titulo-producto color-crunchyroll">PARAMOUNT</h3>
+     <h3 class="titulo-producto">Películas taquilleras,UFC en vivo series exclusivas y todo el contenido de Nickelodeon para los niños.</h3>
+   
+    <p class="precio">19 bs</p>
+    <div class="galeria-producto">
+        <img src="imagenes/paramount/paramountprinci.webp" class="foto-principal" id="main-paramount">
+ </div>
+        <p class="instruccion-galeria">✨ Toca las imágenes para ver detalles</p>
+        
+        <div class="miniaturas">
+            <img src="imagenes/paramount/pa1 (1).webp" onclick="cambiarImagen('main-paramount', 'imagenes/paramount/pa1 (1).webp')">
+            <img src="imagenes/paramount/pa2.webp" onclick="cambiarImagen('main-paramount', 'imagenes/paramount/pa2.webp')">
+           <img src="imagenes/paramount/pa3.webp" onclick="cambiarImagen('main-paramount', 'imagenes/paramount/pa3.webp')">
+             <img src="imagenes/paramount/pa4.webp" onclick="cambiarImagen('main-paramount', 'imagenes/paramount/pa4.webp')">
+             <img src="imagenes/paramount/pa5.webp" onclick="cambiarImagen('main-paramount', 'imagenes/paramount/pa5.webp')">    
+
+        </div>
+
+        <div class="selector-cantidad">
+        <label for="cantidad-paramount">Perfiles:</label>
+        <select id="cantidad-paramount">
+            <option value="1">1 Perfil - 19 bs</option>
+            <option value="2">2 Perfiles - 38 bs</option>
+            <option value="3">3 Perfiles - 57 bs</option>
+        </select>
+    </div>
+   
+  <button class="boton-add" onclick="agregarParamountAlPedido()">
+        + Click aqui agregar tu pedido
+    </button>
+
+</div>
+
+<div id="btn-whatsapp-flotante" onclick="enviarPedido()" style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px; border-radius: 50px; cursor: pointer;">
+    Ver Pedido (<span id="cuenta-carrito">0</span>)
+</div>
+
+
+<div class="tarjeta">
+    <h3 class="titulo-producto color-crunchyroll">VIX PREMIUM</h3>
+     <h3 class="titulo-producto">Cuenta con varios canales en  vivo, películas, series y telenovelas, noticias y los mejores programas deportivos de mexico</h3>
+   
+    <p class="precio">8 bs</p>
+    <div class="galeria-producto">
+        <img src="imagenes/vix/vixprinci.webp" class="foto-principal" id="main-vix">
+ </div>
+        <p class="instruccion-galeria">✨ Toca las imágenes para ver detalles</p>
+        
+        <div class="miniaturas">
+            <img src="imagenes/vix/vix1.webp" onclick="cambiarImagen('main-vix', 'imagenes/vix/vix1.webp')">
+            <img src="imagenes/vix/vix2.webp" onclick="cambiarImagen('main-vix', 'imagenes/vix/vix2.webp')">
+           <img src="imagenes/vix/vix3.webp" onclick="cambiarImagen('main-vix', 'imagenes/vix/vix3.webp')">
+             <img src="imagenes/vix/vix4.webp" onclick="cambiarImagen('main-vix', 'imagenes/vix/vix4.webp')">
+    
+
+        </div>
+
+        <div class="selector-cantidad">
+        <label for="cantidad-vix">Perfiles:</label>
+        <select id="cantidad-vix">
+            <option value="1">1 Perfil - 8 bs</option>
             <option value="2">2 Perfiles - 16 bs</option>
             <option value="3">3 Perfiles - 24 bs</option>
         </select>
     </div>
    
-  <button class="boton-add" onclick="agregarCrunchyAlPedido()">
-        + Agregar al pedido
+  <button class="boton-add" onclick="agregarVixAlPedido()">
+        + Click aqui agregar tu pedido
+    </button>
+
+</div>
+
+<div id="btn-whatsapp-flotante" onclick="enviarPedido()" style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px; border-radius: 50px; cursor: pointer;">
+    Ver Pedido (<span id="cuenta-carrito">0</span>)
+</div>
+
+
+
+
+
+
+
+<div class="tarjeta">
+    <h3 class="titulo-producto color-crunchyroll">CHATGPT PLUS</h3>
+     <h3 class="titulo-producto">IA sin limitaciones de busqueda creacion de imagenes Prompts</h3>
+   
+    <p class="precio">30 bs</p>
+    <div class="galeria-producto">
+        <img src="imagenes/chatgpt/chatprinci (1).webp" class="foto-principal" id="main-chatgpt">
+ </div>
+        <p class="instruccion-galeria">✨ Toca las imágenes para ver detalles</p>
+        
+        <div class="miniaturas">
+            <img src="imagenes/chatgpt/chat1.jpeg" onclick="cambiarImagen('main-chatgpt', 'imagenes/chatgpt/chat1.jpeg')">
+           
+
+        </div>
+
+        <div class="selector-cantidad">
+        <label for="cantidad-chatgpt">Perfiles:</label>
+        <select id="cantidad-chatgpt">
+            <option value="1">1 Perfil - 30 bs</option>
+            <option value="2">2 Perfiles - 60 bs</option>
+            <option value="3">3 Perfiles - 90 bs</option>
+        </select>
+    </div>
+   
+  <button class="boton-add" onclick="agregarChatgptAlPedido()">
+        + Click aqui agregar tu pedido
+    </button>
+
+</div>
+
+<div id="btn-whatsapp-flotante" onclick="enviarPedido()" style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px; border-radius: 50px; cursor: pointer;">
+    Ver Pedido (<span id="cuenta-carrito">0</span>)
+</div>
+
+
+<div class="tarjeta">
+    <h3 class="titulo-producto color-crunchyroll">GEMINI PRO</h3>
+     <h3 class="titulo-producto">Activacion con tu correo,incluye nano banana acceso a los modelos más potentes (GPT-4o y 1.5 Pro) que pueden leer archivos PDF, crear imágenes</h3>
+   
+    <p class="precio">25 bs</p>
+    <div class="galeria-producto">
+        <img src="imagenes/gemini/gemiprinci.webp" class="foto-principal" id="main-gemini">
+ </div>
+        <p class="instruccion-galeria">✨ Toca las imágenes para ver detalles</p>
+        
+        <div class="miniaturas">
+            <img src="imagenes/gemini/gemi1.webp" onclick="cambiarImagen('main-gemini', 'imagenes/gemini/gemi1.webp')">
+       
+
+        </div>
+
+        <div class="selector-cantidad">
+        <label for="cantidad-gemini">Perfiles:</label>
+        <select id="cantidad-gemini">
+            <option value="1">1 Perfil - 25 bs</option>
+            <option value="2">2 Perfiles - 50 bs</option>
+            <option value="3">3 Perfiles - 75 bs</option>
+        </select>
+    </div>
+   
+  <button class="boton-add" onclick="agregarGeminiAlPedido()">
+        + Click aqui agregar tu pedido
+    </button>
+
+</div>
+
+<div id="btn-whatsapp-flotante" onclick="enviarPedido()" style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px; border-radius: 50px; cursor: pointer;">
+    Ver Pedido (<span id="cuenta-carrito">0</span>)
+</div>
+
+
+
+
+<div class="tarjeta">
+    <h3 class="titulo-producto color-crunchyroll">Capcut Pro</h3>
+     <h3 class="titulo-producto">Editor de vídeo,  Incluye herramientas de corte, de cambio de velocidad, así como la posibilidad de añadir varios vídeos o imágenes</h3>
+   
+    <p class="precio">22 bs</p>
+    <div class="galeria-producto">
+        <img src="imagenes/capcut/capcu princi.webp" class="foto-principal" id="main-capcut">
+ </div>
+        <p class="instruccion-galeria">✨ Toca las imágenes para ver detalles</p>
+        
+        <div class="miniaturas">
+            <img src="imagenes/capcut/capcuu.webp" onclick="cambiarImagen('main-capcut', 'imagenes/capcut/capcuu.webp')">
+       
+
+        </div>
+
+        <div class="selector-cantidad">
+        <label for="cantidad-capcut">Perfiles:</label>
+        <select id="cantidad-capcut">
+            <option value="1">1 Perfil - 22 bs</option>
+            <option value="2">2 Perfiles - 44 bs</option>
+            <option value="3">3 Perfiles - 50 bs</option>
+        </select>
+    </div>
+   
+  <button class="boton-add" onclick="agregarCapcutAlPedido()">
+        + Click aqui agregar tu pedido
+    </button>
+
+</div>
+
+<div id="btn-whatsapp-flotante" onclick="enviarPedido()" style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px; border-radius: 50px; cursor: pointer;">
+    Ver Pedido (<span id="cuenta-carrito">0</span>)
+</div>
+
+
+
+
+<div class="tarjeta">
+    <h3 class="titulo-producto color-crunchyroll">Canva</h3>
+     <h3 class="titulo-producto">Activacion con tu correo editor de imagenes presentaciones edicion sin limitaciones</h3>
+   
+    <p class="precio">15 bs</p>
+    <div class="galeria-producto">
+        <img src="imagenes/canva/canvaprinci.webp" class="foto-principal" id="main-canva">
+ </div>
+        <p class="instruccion-galeria">✨ Toca las imágenes para ver detalles</p>
+        
+        <div class="miniaturas">
+            <img src="imagenes/canva/unacanva.webp" onclick="cambiarImagen('main-canva', 'imagenes/canva/unacanva.webp')">
+       
+
+        </div>
+
+        <div class="selector-cantidad">
+        <label for="cantidad-canva">Perfiles:</label>
+        <select id="cantidad-canva">
+            <option value="1">1 Perfil - 15 bs</option>
+            <option value="2">2 Perfiles - 30 bs</option>
+            <option value="3">3 Perfiles - 45 bs</option>
+        </select>
+    </div>
+   
+  <button class="boton-add" onclick="agregarCapcutAlPedido()">
+        + Click aqui agregar tu pedido
     </button>
 
 </div>
@@ -70,43 +577,198 @@
 
 
 <div class="tarjeta">
-      <h3 class="titulo-producto">Disney</h3>
-    <img src="imagenes/Imagendisney/dis.jpg" alt="Producto 1">
-    <h3>Producto 1</h3>
-    <p class="precio">$50.00</p>
-    <button onclick="agregarAlCarrito('Producto 1', 50)" class="boton-add">
-        + Agregar al pedido
+    <h3 class="titulo-producto color-crunchyroll">VIKI RAKUTEN</h3>
+     <h3 class="titulo-producto">La plataforma líder para amantes de los dramas asiáticos. Disfruta de series de Corea, China y Japón con los mejores subtítulos hechos por fans y en alta definición.</h3>
+   
+    <p class="precio">14 bs</p>
+    <div class="galeria-producto">
+        <img src="imagenes/chatgpt/vikiiiprinci (1).webp" class="foto-principal" id="main-viki">
+ </div>
+        <p class="instruccion-galeria">✨ Toca las imágenes para ver detalles</p>
+        
+        <div class="miniaturas">
+            <img src="imagenes/vikirakute/vki1.webp" onclick="cambiarImagen('main-viki', 'imagenes/vikirakute/vki1.webp')">
+            <img src="imagenes/vikirakute/viki2.webp" onclick="cambiarImagen('main-viki', 'imagenes/vikirakute/viki2.webp')">
+           <img src="imagenes/vikirakute/viki3.webp" onclick="cambiarImagen('main-viki', 'imagenes/vikirakute/viki3.webp')">
+             <img src="imagenes/vikirakute/viki4.webp" onclick="cambiarImagen('main-viki', 'imagenes/vikirakute/viki4.webp')">
+        
+
+        </div>
+
+        <div class="selector-cantidad">
+        <label for="cantidad-viki">Perfiles:</label>
+        <select id="cantidad-viki">
+            <option value="1">1 Perfil - 14 bs</option>
+            <option value="2">2 Perfiles - 28 bs</option>
+            <option value="3">3 Perfiles - 42 bs</option>
+        </select>
+    </div>
+   
+  <button class="boton-add" onclick="agregarVikiAlPedido()">
+        + Click aqui agregar tu pedido
     </button>
+
 </div>
+
+<div id="btn-whatsapp-flotante" onclick="enviarPedido()" style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px; border-radius: 50px; cursor: pointer;">
+    Ver Pedido (<span id="cuenta-carrito">0</span>)
+</div>
+
+
 
 <div class="tarjeta">
-    <h3 class="titulo-producto">Hbo Max</h3>
-    <img src="imagenes/imagenHBO/hbo.webp" alt="Producto 1">
-    <h3>Producto 1</h3>
-    <p class="precio">$50.00</p>
-    <button onclick="agregarAlCarrito('Producto 1', 50)" class="boton-add">
-        + Agregar al pedido
+    <h3 class="titulo-producto color-crunchyroll">APPLE TV</h3>
+     <h3 class="titulo-producto">Disfruta de las series y películas MLS en vivo más premiadas de la industria con una calidad de imagen y sonido inigualable</h3>
+   
+    <p class="precio">15 bs</p>
+    <div class="galeria-producto">
+        <img src="imagenes/appletv/appleprinci.webp" class="foto-principal" id="main-apple">
+ </div>
+        <p class="instruccion-galeria">✨ Toca las imágenes para ver detalles</p>
+        
+        <div class="miniaturas">
+            <img src="imagenes/appletv/apple.webp" onclick="cambiarImagen('main-apple', 'imagenes/appletv/apple.webp')">
+             <img src="imagenes/appletv/appl1.webp" onclick="cambiarImagen('main-apple', 'imagenes/appletv/appl1.webp')">
+              <img src="imagenes/appletv/zppl2.webp" onclick="cambiarImagen('main-apple', 'imagenes/appletv/zppl2.webp')">
+               <img src="imagenes/appletv/apple3.webp" onclick="cambiarImagen('main-apple', 'imagenes/appletv/apple3.webp')">
+               
+            <img src="imagenes/appletv/apple4.webp" onclick="cambiarImagen('main-apple', 'imagenes/appletv/apple4.webp')">
+
+        </div>
+
+        <div class="selector-cantidad">
+        <label for="cantidad-apple">Perfiles:</label>
+        <select id="cantidad-apple">
+            <option value="1">1 Perfil - 15 bs</option>
+            <option value="2">2 Perfiles - 30 bs</option>
+            <option value="3">3 Perfiles - 45 bs</option>
+        </select>
+    </div>
+   
+  <button class="boton-add" onclick="agregarAppletvAlPedido()">
+        + Click aqui agregar tu pedido
     </button>
+
 </div>
+
+<div id="btn-whatsapp-flotante" onclick="enviarPedido()" style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px; border-radius: 50px; cursor: pointer;">
+    Ver Pedido (<span id="cuenta-carrito">0</span>)
+</div>
+
+
+
 
 <div class="tarjeta">
-     <h3 class="titulo-producto">Netflix</h3>
-    <img src="imagenes/Imagennetflix/net.webp" alt="Producto 1">
-    <h3>Producto 1</h3>
-    <p class="precio">$50.00</p>
-    <button onclick="agregarAlCarrito('Producto 1', 50)" class="boton-add">
-        + Agregar al pedido
+    <h3 class="titulo-producto color-crunchyroll">FLUJO TV</h3>
+     <h3 class="titulo-producto">Plataforma de canales en vivo de Boliva y canales extranjeros, contenido de peliculas series novelas animes</h3>
+   
+    <p class="precio">22 bs</p>
+    <div class="galeria-producto">
+        <img src="imagenes/flujotv/flujoprinci.webp" class="foto-principal" id="main-flujo">
+ </div>
+        <p class="instruccion-galeria">✨ Toca las imágenes para ver detalles</p>
+        
+        <div class="miniaturas">
+        
+            <img src="imagenes/flujotv/flu1.webp" onclick="cambiarImagen('main-flujo', 'imagenes/flujotv/flu1.webp')">
+           <img src="imagenes/flujotv/flu2.webp" onclick="cambiarImagen('main-flujo', 'imagenes/flujotv/flu2.webp')">
+             <img src="imagenes/flujotv/flu3.webp" onclick="cambiarImagen('main-flujo', 'imagenes/flujotv/flu3.webp')">
+             <img src="imagenes/flujotv/flu4.webp" onclick="cambiarImagen('main-flujo', 'imagenes/flujotv/flu4.webp')">    
+<img src="imagenes/flujotv/flu5.webp" onclick="cambiarImagen('main-flujo', 'imagenes/flujotv/flu5.webp')">
+        </div>
+
+        <div class="selector-cantidad">
+        <label for="cantidad-flujo">Perfiles:</label>
+        <select id="cantidad-flujo">
+            <option value="1">1 Perfil - 22 bs</option>
+            <option value="2">2 Perfiles - 42 bs</option>
+            <option value="3">3 Perfiles - 50 bs</option>
+        </select>
+    </div>
+   
+  <button class="boton-add" onclick="agregarFlujoAlPedido()">
+        + Click aqui agregar tu pedido
     </button>
+
 </div>
 
-<div id="btn-whatsapp-flotante" onclick="enviarPedido()">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="30">
-    Ver mi pedido (<span id="cuenta-carrito">0</span>)
+<div id="btn-whatsapp-flotante" onclick="enviarPedido()" style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px; border-radius: 50px; cursor: pointer;">
+    Ver Pedido (<span id="cuenta-carrito">0</span>)
 </div>
 
-       
 
-    
+<div class="tarjeta">
+    <h3 class="titulo-producto color-crunchyroll">OLEADA TV</h3>
+     <h3 class="titulo-producto">Plataforma de canale en vivo de Boliva y canales extranjeros, contenido de peliculas series novelas anime</h3>
+   
+    <p class="precio">22 bs</p>
+    <div class="galeria-producto">
+        <img src="imagenes/oleada/oleadaprinci (1).webp" class="foto-principal" id="main-oleada">
+ </div>
+        <p class="instruccion-galeria">✨ Toca las imágenes para ver detalles</p>
+        
+        <div class="miniaturas">
+         
+
+        </div>
+
+        <div class="selector-cantidad">
+        <label for="cantidad-oleada">Perfiles:</label>
+        <select id="cantidad-oleada">
+            <option value="1">1 Perfil - 22 bs</option>
+            <option value="2">2 Perfiles - 42 bs</option>
+            <option value="3">3 Perfiles - 50 bs</option>
+        </select>
+    </div>
+   
+  <button class="boton-add" onclick="agregarOleadaAlPedido()">
+        + Click aqui agregar tu pedido
+    </button>
+
+</div>
+
+<div id="btn-whatsapp-flotante" onclick="enviarPedido()" style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px; border-radius: 50px; cursor: pointer;">
+    Ver Pedido (<span id="cuenta-carrito">0</span>)
+</div>
+
+
+
+<div class="tarjeta">
+    <h3 class="titulo-producto color-crunchyroll">ZONA TV</h3>
+     <h3 class="titulo-producto">Plataforma de canale en vivo de Boliva y canales extranjeros, contenido de peliculas series novelas anime</h3>
+   
+    <p class="precio">22 bs</p>
+    <div class="galeria-producto">
+        <img src="imagenes/zona/zonaprinci.webp" class="foto-principal" id="main-zona">
+ </div>
+        <p class="instruccion-galeria">✨ Toca las imágenes para ver detalles</p>
+        
+        <div class="miniaturas">
+   
+
+        </div>
+
+        <div class="selector-cantidad">
+        <label for="cantidad-zona">Perfiles:</label>
+        <select id="cantidad-zona">
+            <option value="1">1 Perfil - 22 bs</option>
+            <option value="2">2 Perfiles - 42 bs</option>
+            <option value="3">3 Perfiles - 50 bs</option>
+        </select>
+    </div>
+   
+  <button class="boton-add" onclick="agregarZonaAlPedido()">
+        + Click aqui agregar tu pedido
+    </button>
+
+</div>
+
+<div id="btn-whatsapp-flotante" onclick="enviarPedido()" style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px; border-radius: 50px; cursor: pointer;">
+    Ver Pedido (<span id="cuenta-carrito">0</span>)
+</div>
+
+
+
         </main>
         <script src="script.js"></script>
 </body>
