@@ -79,13 +79,13 @@ function agregarDisneyAlPedido() {
 
     if (cantidadSeleccionada === "1") {
         nombreParaCarrito = "Disney (1 Perfil)";
-        precioParaCarrito = 27;
+        precioParaCarrito = 26;
     } else if (cantidadSeleccionada === "2") {
         nombreParaCarrito = "Disney (2 Perfiles)";
-        precioParaCarrito = 54; 
+        precioParaCarrito = 52; 
     } else if (cantidadSeleccionada === "3") {
         nombreParaCarrito = "Disney (3 Perfiles)";
-        precioParaCarrito = 81;
+        precioParaCarrito = 78;
     }
 
     // Enviamos los datos correctos a la función general
@@ -168,7 +168,7 @@ function agregarParamountAlPedido() {
 
     if (cantidadSeleccionada === "1") {
         nombreParaCarrito = "paramount (1 Perfil)";
-        precioParaCarrito = 19;
+        precioParaCarrito = 18;
     } else if (cantidadSeleccionada === "2") {
         nombreParaCarrito = "paramount (2 Perfiles)";
         precioParaCarrito = 38; 
@@ -309,7 +309,7 @@ function agregarCapcutAlPedido() {
 
     if (cantidadSeleccionada === "1") {
         nombreParaCarrito = "capcut (1 Perfil)";
-        precioParaCarrito =22;
+        precioParaCarrito =46;
     } else if (cantidadSeleccionada === "2") {
         nombreParaCarrito = "capcut (2 Perfiles)";
         precioParaCarrito = 44; 
@@ -367,7 +367,7 @@ function agregarVikiAlPedido() {
 
     if (cantidadSeleccionada === "1") {
         nombreParaCarrito = "viki (1 Perfil)";
-        precioParaCarrito = 14;
+        precioParaCarrito = 15;
     } else if (cantidadSeleccionada === "2") {
         nombreParaCarrito = "viki (2 Perfiles)";
         precioParaCarrito = 28; 
@@ -422,10 +422,10 @@ function agregarFlujoAlPedido() {
 
     if (cantidadSeleccionada === "1") {
         nombreParaCarrito = "flujo (1 Perfil)";
-        precioParaCarrito = 22;
+        precioParaCarrito = 23;
     } else if (cantidadSeleccionada === "2") {
         nombreParaCarrito = "flujo (2 Perfiles)";
-        precioParaCarrito = 42; 
+        precioParaCarrito = 43; 
     } else if (cantidadSeleccionada === "3") {
         nombreParaCarrito = "flujo (3 Perfiles)";
         precioParaCarrito = 50;
@@ -449,10 +449,10 @@ function agregarOleadaAlPedido() {
 
     if (cantidadSeleccionada === "1") {
         nombreParaCarrito = "oleada (1 Perfil)";
-        precioParaCarrito = 22;
+        precioParaCarrito = 23;
     } else if (cantidadSeleccionada === "2") {
         nombreParaCarrito = "oleada (2 Perfiles)";
-        precioParaCarrito = 42; 
+        precioParaCarrito = 43; 
     } else if (cantidadSeleccionada === "3") {
         nombreParaCarrito = "oleada (3 Perfiles)";
         precioParaCarrito = 50;
@@ -477,10 +477,10 @@ function agregarZonaAlPedido() {
 
     if (cantidadSeleccionada === "1") {
         nombreParaCarrito = "zona (1 Perfil)";
-        precioParaCarrito = 22;
+        precioParaCarrito = 23;
     } else if (cantidadSeleccionada === "2") {
         nombreParaCarrito = "zona (2 Perfiles)";
-        precioParaCarrito = 42; 
+        precioParaCarrito = 43; 
     } else if (cantidadSeleccionada === "3") {
         nombreParaCarrito = "zona (3 Perfiles)";
         precioParaCarrito = 50;
