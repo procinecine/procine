@@ -20,11 +20,11 @@ body {
 }
 
 header {
-    background: #6a3cc6;
+background: linear-gradient(135deg, #6a3cc6, #b83b5e); /* De tu lila a un coral cálido */
     color: #f1ee08;
     padding: 30px;
     text-align: center;
-    border-bottom: 4px solid #e50914; /* Rojo tipo Netflix */
+    border-bottom: 4px solid #e50914; 
     border-radius: 0 0 20px 20px;
 }
 
@@ -73,12 +73,14 @@ header h1 {
 }
 /* Ajuste para que las tarjetas no se vean gigantes en computadoras */
 .tarjeta {
-    background: #D4AF37;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    transition: 0.3s;
-    max-width: 320px;
+   
+background: linear-gradient(to right, #ffecd2, #fcb69f); /* De melocotón claro a rosa cálido */
+border-radius: 20px;
+padding: 20px;
+box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+transition: 0.3s;
+max-width: 320px;
+color: #333333;
 }
 .tarjeta:hover { transform: translateY(-5px); }
 
