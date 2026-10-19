@@ -24,13 +24,13 @@ function agregarCrunchyAlPedido() {
 
     if (cantidadSeleccionada === "1") {
         nombreParaCarrito = "Crunchyroll (1 Perfil)";
-        precioParaCarrito = 10;
+        precioParaCarrito = 12;
     } else if (cantidadSeleccionada === "2") {
         nombreParaCarrito = "Crunchyroll (2 Perfiles)";
-        precioParaCarrito = 20; 
+        precioParaCarrito = 22; 
     } else if (cantidadSeleccionada === "3") {
         nombreParaCarrito = "Crunchyroll (3 Perfiles)";
-        precioParaCarrito = 30;
+        precioParaCarrito = 34;
     }
 
     // Enviamos los datos correctos a la función general
@@ -79,10 +79,10 @@ function agregarDisneyAlPedido() {
 
     if (cantidadSeleccionada === "1") {
         nombreParaCarrito = "Disney (1 Perfil)";
-        precioParaCarrito = 26;
+        precioParaCarrito = 27;
     } else if (cantidadSeleccionada === "2") {
         nombreParaCarrito = "Disney (2 Perfiles)";
-        precioParaCarrito = 52; 
+        precioParaCarrito = 54; 
     } else if (cantidadSeleccionada === "3") {
         nombreParaCarrito = "Disney (3 Perfiles)";
         precioParaCarrito = 78;
@@ -168,7 +168,7 @@ function agregarParamountAlPedido() {
 
     if (cantidadSeleccionada === "1") {
         nombreParaCarrito = "paramount (1 Perfil)";
-        precioParaCarrito = 25;
+        precioParaCarrito = 24;
     } else if (cantidadSeleccionada === "2") {
         nombreParaCarrito = "paramount (2 Perfiles)";
         precioParaCarrito = 38; 
